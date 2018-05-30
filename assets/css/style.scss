@@ -1,0 +1,164 @@
+@import "variables";
+@import "main";
+
+pre {
+  padding: 15px 15px 0 15px;
+}
+
+.code-style {
+  padding: 15px;
+  overflow: auto;
+}
+
+.class {
+  color: $alizarin;
+}
+
+pre, .code-style {
+  color: $white;
+  background-color: #2d2d2d;
+  font-size: 1.25rem;
+  overflow: auto;
+
+  .doc, .co {
+    color: #999;
+  }
+
+  .ht {
+    color: $peterRiver;
+  }
+
+  .ha {
+    color: $white;
+  }
+
+  .hv {
+    color: $sunFlower;
+  }
+}
+
+.ex {
+  border-radius: 0.25rem;
+  margin: 2px;
+
+  &-nav {
+    background-color: $carrot;
+    height: 40px;
+  }
+
+  &-container {
+    background-color: $belizeHole;
+    height: 80px;
+  }
+
+  &-side {
+    background-color: $amethyst;
+    height: 80px;
+  }
+
+  &-col {
+    height: 100px;
+    min-width: 185px;
+
+    &-o {
+      @extend .ex-col;
+      background-color: $carrot;
+    }
+
+    &-b {
+      @extend .ex-col;
+      background-color: $belizeHole;
+    }
+
+    &-v {
+      @extend .ex-col;
+      background-color: $amethyst;
+    }
+
+    &-g {
+      @extend .ex-col;
+      background-color: $midnightBlue;
+    }
+
+    &-gr {
+      @extend .ex-col;
+      background-color: $nephritis;
+    }
+
+    &-r {
+      @extend .ex-col;
+      background-color: $pomegranate;
+    }
+
+    &-y {
+      @extend .ex-col;
+      background-color: $sunFlower;
+    }
+  }
+
+  &-alignment {
+    margin: 0 -2px;
+  }
+
+  &-max {
+    width: 200px;
+    height: 100px;
+
+    &-b {
+      @extend .ex-max;
+      background-color: $belizeHole;
+    }
+
+    &-y {
+      @extend .ex-max;
+      background-color: $sunFlower;
+    }
+
+    &-r {
+      @extend .ex-max;
+      background-color: $alizarin;
+    }
+  }
+
+  &-4 {
+    width: 25%;
+  }
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid $midnightBlue;
+}
+
+thead {
+  th {
+    padding: 5px;
+  }
+}
+
+tbody {
+  border: none;
+  th {
+    font-weight: 400;
+    padding: 5px;
+  }
+  tr:nth-last-of-type(odd) {
+    background-color: $clouds;
+  }
+}
+
+.img {
+  &-fit {
+    min-width: 250px;
+  }
+
+  &-ex-center {
+    max-width: 400px;
+    width: 100%;
+  }
+}
+
+@import "responsive";

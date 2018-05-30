@@ -1,0 +1,357 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
+  margin: 0; }
+
+a {
+  color: #2980b9;
+  text-decoration: none; }
+
+.container {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.container-fluid {
+  padding: 0 15px; }
+
+.col-1 {
+  flex: 1; }
+
+.col-2 {
+  flex: 2; }
+
+.col-3 {
+  flex: 3; }
+
+.col-4 {
+  flex: 4; }
+
+.col-5 {
+  flex: 5; }
+
+.col-6 {
+  flex: 6; }
+
+h1 {
+  font-size: 2.5rem; }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 1.75rem; }
+
+h4 {
+  font-size: 1.5rem; }
+
+h5 {
+  font-size: 1.25rem; }
+
+h6 {
+  font-size: 1rem; }
+
+.no-margin {
+  margin: 0; }
+
+.no-margin-top {
+  margin-top: 0; }
+
+.no-margin-bottom {
+  margin-bottom: 0; }
+
+.no-padding {
+  padding: 0; }
+
+.bold {
+  font-weight: bold; }
+
+.italic {
+  font-style: italic; }
+
+.underline {
+  text-decoration: underline; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.lowercase {
+  text-transform: lowercase; }
+
+.text-center {
+  text-align: center; }
+
+.float-right {
+  float: right; }
+
+.float-left {
+  float: left; }
+
+.clear {
+  clear: both; }
+
+nav {
+  padding: 5px 0;
+  border-bottom: 2px solid #2980b9; }
+
+.flex {
+  display: flex; }
+
+.column {
+  flex-direction: column; }
+
+.wrap {
+  flex-wrap: wrap; }
+
+.flex-center {
+  justify-content: center; }
+
+.flex-start {
+  justify-content: flex-start; }
+
+.flex-end {
+  justify-content: flex-end; }
+
+.space-around {
+  justify-content: space-around; }
+
+.space-between {
+  justify-content: space-between; }
+
+.space-evenly {
+  justify-content: space-evenly; }
+
+.vertical-center {
+  align-items: center; }
+
+.form-element input, .form-element textarea {
+  width: 100%; }
+  .form-element input:focus, .form-element textarea:focus {
+    outline: none; }
+
+.img-fit {
+  max-width: 100%; }
+.img-center {
+  display: block;
+  margin: 0 auto; }
+
+pre {
+  padding: 15px 15px 0 15px; }
+
+.code-style {
+  padding: 15px;
+  overflow: auto; }
+
+.class {
+  color: #e74c3c; }
+
+pre, .code-style {
+  color: #FFFFFF;
+  background-color: #2d2d2d;
+  font-size: 1.25rem;
+  overflow: auto; }
+  pre .doc, pre .co, .code-style .doc, .code-style .co {
+    color: #999; }
+  pre .ht, .code-style .ht {
+    color: #3498db; }
+  pre .ha, .code-style .ha {
+    color: #FFFFFF; }
+  pre .hv, .code-style .hv {
+    color: #f1c40f; }
+
+.ex {
+  border-radius: 0.25rem;
+  margin: 2px; }
+  .ex-nav {
+    background-color: #e67e22;
+    height: 40px; }
+  .ex-container {
+    background-color: #2980b9;
+    height: 80px; }
+  .ex-side {
+    background-color: #9b59b6;
+    height: 80px; }
+  .ex-col, .ex-col-o, .ex-col-b, .ex-col-v, .ex-col-g, .ex-col-gr, .ex-col-r, .ex-col-y {
+    height: 100px;
+    min-width: 185px; }
+    .ex-col-o {
+      background-color: #e67e22; }
+    .ex-col-b {
+      background-color: #2980b9; }
+    .ex-col-v {
+      background-color: #9b59b6; }
+    .ex-col-g {
+      background-color: #2c3e50; }
+    .ex-col-gr {
+      background-color: #27ae60; }
+    .ex-col-r {
+      background-color: #c0392b; }
+    .ex-col-y {
+      background-color: #f1c40f; }
+  .ex-alignment {
+    margin: 0 -2px; }
+  .ex-max, .ex-max-b, .ex-max-y, .ex-max-r {
+    width: 200px;
+    height: 100px; }
+    .ex-max-b {
+      background-color: #2980b9; }
+    .ex-max-y {
+      background-color: #f1c40f; }
+    .ex-max-r {
+      background-color: #e74c3c; }
+  .ex-4 {
+    width: 25%; }
+
+table {
+  border-collapse: collapse; }
+
+table, th, td {
+  border: 1px solid #2c3e50; }
+
+thead th {
+  padding: 5px; }
+
+tbody {
+  border: none; }
+  tbody th {
+    font-weight: 400;
+    padding: 5px; }
+  tbody tr:nth-last-of-type(odd) {
+    background-color: #ecf0f1; }
+
+.img-fit {
+  min-width: 250px; }
+.img-ex-center {
+  max-width: 400px;
+  width: 100%; }
+
+/*--breakpoint-xs: 0;
+--breakpoint-sm: 576px;
+--breakpoint-md: 768px;
+--breakpoint-lg: 992px;
+--breakpoint-xl: 1200px;*/
+@media only screen and (min-width: 1200px) {
+  .col-xl-1 {
+    flex: 1; }
+
+  .col-xl-2 {
+    flex: 2; }
+
+  .col-xl-3 {
+    flex: 3; }
+
+  .xl-hide {
+    display: none; }
+  .xl-flex {
+    display: flex; }
+  .xl-column {
+    flex-direction: column; }
+  .xl-row {
+    flex-direction: row; } }
+@media only screen and (max-width: 1199px) {
+  .col-lg-1 {
+    flex: 1; }
+
+  .col-lg-2 {
+    flex: 2; }
+
+  .col-lg-3 {
+    flex: 3; }
+
+  .col-lg-4 {
+    flex: 4; }
+
+  .col-lg-5 {
+    flex: 5; }
+
+  .col-lg-6 {
+    flex: 6; }
+
+  .col-lg-7 {
+    flex: 7; }
+
+  .col-lg-8 {
+    flex: 8; }
+
+  .col-lg-9 {
+    flex: 9; }
+
+  .col-lg-10 {
+    flex: 10; }
+
+  .col-lg-11 {
+    flex: 11; }
+
+  .col-lg-12 {
+    flex: 12; }
+
+  .lg-hide {
+    display: none; }
+  .lg-flex {
+    display: flex; }
+  .lg-column {
+    flex-direction: column; }
+  .lg-row {
+    flex-direction: row; } }
+@media only screen and (max-width: 991px) {
+  .col-md-1 {
+    flex: 1; }
+
+  .col-md-2 {
+    flex: 2; }
+
+  .col-md-3 {
+    flex: 3; }
+
+  .md-hide {
+    display: none; }
+  .md-flex {
+    display: flex; }
+  .md-column {
+    flex-direction: column; }
+  .md-row {
+    flex-direction: row; } }
+@media only screen and (max-width: 767px) {
+  .col-sm-1 {
+    flex: 1; }
+
+  .col-sm-2 {
+    flex: 2; }
+
+  .col-sm-3 {
+    flex: 3; }
+
+  .sm-hide {
+    display: none; }
+  .sm-flex {
+    display: flex; }
+  .sm-column {
+    flex-direction: column; }
+  .sm-row {
+    flex-direction: row; } }
+@media only screen and (max-width: 576px) {
+  .col-xs-1 {
+    flex: 1; }
+
+  .col-xs-2 {
+    flex: 2; }
+
+  .col-xs-3 {
+    flex: 3; }
+
+  .xs-hide {
+    display: none; }
+  .xs-flex {
+    display: flex; }
+  .xs-column {
+    flex-direction: column; }
+  .xs-row {
+    flex-direction: row; } }
+@media only screen and (max-width: 991px) {
+  .ex-4 {
+    width: 50%; } }
+@media only screen and (max-width: 576px) {
+  .ex-4 {
+    width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */

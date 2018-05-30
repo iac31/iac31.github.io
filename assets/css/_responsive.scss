@@ -1,0 +1,32 @@
+/*--breakpoint-xs: 0;
+--breakpoint-sm: 576px;
+--breakpoint-md: 768px;
+--breakpoint-lg: 992px;
+--breakpoint-xl: 1200px;*/
+
+@import "responsive_xl";
+@import "responsive-lg";
+@import "responsive-md";
+@import "responsive-sm";
+@import "responsive-xs";
+
+@media only screen and (min-width: 1200px) {
+}
+
+@media only screen and (max-width: 1199px) {
+}
+
+@media only screen and (max-width: 991px) {
+  .ex-4 {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+}
+
+@media only screen and (max-width: 576px) {
+  .ex-4 {
+    width: 100%;
+  }
+}

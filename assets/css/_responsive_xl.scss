@@ -1,0 +1,27 @@
+@media only screen and (min-width: 1200px) {
+
+  @for $i from 1 through 3 {
+    .col-xl-#{$i} {
+      flex: $i;
+    }
+  }
+
+  .xl {
+
+    &-hide {
+      display: none;
+    }
+
+    &-flex {
+      display: flex;
+    }
+
+    &-column {
+      flex-direction: column;
+    }
+
+    &-row {
+      flex-direction: row;
+    }
+  }
+}

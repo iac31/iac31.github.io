@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+<header>
+
+</header>
+<main>
+    <nav>
+        <div class="container text-center">
+            <img height=90 src="assets/images/logo.jpg" alt="logo">
+        </div>
+    </nav>
+    <div class="container">
+        <h3>Starter Template</h3>
+        <pre>
+<code><span class="doc">&lt;!DOCTYPE html&gt;</span></code>
+<code>&lt;<span class="ht">html</span><span class="ha"> lang=</span><span class="hv">"en"</span>&gt;</code>
+<code>&lt;<span class="ht">head</span>&gt;</code>
+    <code><span class="co">&lt;!-- Required meta tags --&gt;</span></code>
+    <code>&lt;<span class="ht">meta</span><span class="ha"> charset=</span><span class="hv">"UTF-8"</span>&gt;</code>
+    <code>&lt;<span class="ht">meta</span><span class="ha"> name=</span><span class="hv">"viewport"</span><span
+            class="ha"> content=</span><span class="hv">"width=device-width, initial-scale=1, shrink-to-fit=no"</span>&gt;</code>
+
+    <code><span class="co">&lt;!-- Load CSS --&gt;</span></code>
+    <code>&lt;<span class="ht">link</span><span class="ha"> rel=</span><span class="hv">"stylesheet"</span><span
+            class="ha"> href=</span><span class="hv">"assets/css/style.css"</span>&gt;</code>
+
+    <code>&lt;<span class="ht">title</span>&gt;Template&lt;<span class="ht">/title</span>&gt;</code>
+<code>&lt;<span class="ht">/head</span>&gt;</code>
+<code>&lt;<span class="ht">body</span>&gt;</code>
+    <code>&lt;<span class="ht">h1</span>&gt;Hello, world!&lt;<span class="ht">/h1</span>&gt;</code>
+<code>&lt;<span class="ht">/body</span>&gt;</code>
+        </pre>
+        <h2>Important globals</h2>
+        <h4><a target="_blank" href="https://www.w3schools.com/tags/tag_doctype.asp">HTML5 doctype</a> and <a
+                target="_blank" href="https://www.w3schools.com/tags/ref_language_codes.asp">Language Code Reference</a>
+        </h4>
+        <pre>
+<code><span class="doc">&lt;!DOCTYPE html&gt;</span></code>
+<code>&lt;<span class="ht">html</span><span class="ha"> lang=</span><span class="hv">"en"</span>&gt;</code>
+    ...
+<code>&lt;<span class="ht">/html</span>&gt;</code>
+        </pre>
+        <h4><a target="_blank" href="https://www.w3schools.com/css/css_rwd_viewport.asp">Responsive meta tag</a></h4>
+        <pre>
+<code>&lt;<span class="ht">meta</span><span class="ha"> name=</span><span class="hv">"viewport"</span><span class="ha"> content=</span><span
+        class="hv">"width=device-width, initial-scale=1, shrink-to-fit=no"</span>&gt;</code>
+        </pre>
+    </div>
+    <div class="container">
+        <h2>Layout</h2>
+        <h4>Container</h4>
+        <p>Choose between a fixed width and a full width container to wrap big sections of the website.</p>
+        <p>Use <code class="class">.container</code> as a fixed width container.</p>
+        <p><pre class="code-style">&lt;<span class="ht">div</span><span class="ha"> class=</span><span class="hv">"container"</span>&gt;&lt;<span class="ht">/div</span>&gt;</pre></p>
+        <div class="ex flex column ex-alignment">
+            <div class="ex ex-nav"></div>
+            <div class="flex">
+                <div class="col-1 ex ex-side"></div>
+                <div class="col-4 ex ex-container"></div>
+            </div>
+        </div>
+        <h4>Container fluid</h4>
+        <p>Use <code class="class">.container-fluid</code> for the entire width of the viewport.</p>
+        <p><pre class="code-style">&lt;<span class="ht">div</span><span class="ha"> class=</span><span class="hv">"container-fluid"</span>&gt;&lt;<span class="ht">/div</span>&gt;</pre></p>
+    </div>
+    <div class="container-fluid">
+        <div class="ex flex column ex-alignment">
+            <div class="ex ex-nav"></div>
+            <div class="flex">
+                <div class="col-1 ex ex-side"></div>
+                <div class="col-4 ex ex-container"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Grid system</h2>
+        <h5 class="no-margin-bottom">6 general columns</h5>
+        <p class="no-margin">Each with flex of X</p>
+        <p><pre class="code-style">&lt;<span class="ht">div</span><span class="ha"> class=</span><span class="hv">"col-X"</span>&gt;&lt;<span class="ht">/div</span>&gt;</pre></p>
+        <h5 class="no-margin-bottom">And 3 columns for every breakpoint</h5>
+        <p><pre class="code-style">&lt;<span class="ht">div</span><span class="ha"> class=</span><span class="hv">"col-BP-X"</span>&gt;&lt;<span class="ht">/div</span>&gt;</pre></p>
+        <table>
+            <thead>
+            <tr>
+                <th>BP</th>
+                <th>less than</th>
+            </thead>
+            <tbody>
+            <tr>
+                <th class="bold">xs</th>
+                <th>576px</th>
+            </tr>
+            <tr>
+                <th class="bold">sm</th>
+                <th>767px</th>
+            </tr>
+            <tr>
+                <th class="bold">md</th>
+                <th>991px</th>
+            </tr>
+            <tr>
+                <th class="bold">lg</th>
+                <th>1199px</th>
+            </tr>
+            <tr>
+                <th class="bold">xl</th>
+                <th>&infin;</th>
+            </tr>
+            </tbody>
+        </table>
+        <h2>Parent div</h2>
+        <p>Use <code class="class">.flex</code> class for div parent so that div children to be placed as row<p>
+        <p><pre class="code-style">&lt;<span class="ht">div</span><span class="ha"> class=</span><span class="hv">"flex"</span>&gt;&lt;<span class="ht">/div</span>&gt;</pre></p>
+        <p>For a row section to be placed as columns when viewport is less than the breakpoint, use <code class="class">.BP-column</code> extra class for which breakpoint you want to change the layout. For example, use <code class="class">.sm-column</code> for the layout to change under 767px. The same applies for <code class="class">.BP-flex</code></p>
+        <p><pre class="code-style">&lt;<span class="ht">div</span><span class="ha"> class=</span><span class="hv">"flex sm-column"</span>&gt;&lt;<span class="ht">/div</span>&gt;</pre></p>
+        <div class="flex ex ex-alignment sm-column">
+            <div class="ex ex-max ex-max-b"></div>
+            <div class="ex ex-max ex-max-y"></div>
+            <div class="ex ex-max ex-max-r"></div>
+        </div>
+        <h2>Children layout</h2>
+        <h5>Columns</h5>
+        <p><pre class="code-style">&lt;<span class="ht">div</span><span class="ha"> class=</span><span class="hv">"flex column"</span>&gt;&lt;<span class="ht">/div</span>&gt;</pre></p>
+        <div class="flex column ex ex-alignment">
+            <div class="ex ex-max ex-max-b"></div>
+            <div class="ex ex-max ex-max-y"></div>
+            <div class="ex ex-max ex-max-r"></div>
+        </div>
+        <h5>At start</h5>
+        <p>This is default for content, but if you need to specify, use <code class="class">.flex-start</code></p>
+        <h5>At end</h5>
+        <p><pre class="code-style">&lt;<span class="ht">div</span><span class="ha"> class=</span><span class="hv">"flex flex-end"</span>&gt;&lt;<span class="ht">/div</span>&gt;</pre></p>
+        <div class="flex flex-end ex ex-alignment">
+            <div class="ex ex-max ex-max-b"></div>
+            <div class="ex ex-max ex-max-y"></div>
+            <div class="ex ex-max ex-max-r"></div>
+        </div>
+        <h5>Centered</h5>
+        <p><pre class="code-style">&lt;<span class="ht">div</span><span class="ha"> class=</span><span class="hv">"flex flex-center"</span>&gt;&lt;<span class="ht">/div</span>&gt;</pre></p>
+        <div class="flex flex-center ex ex-alignment">
+            <div class="ex ex-max ex-max-b"></div>
+            <div class="ex ex-max ex-max-y"></div>
+            <div class="ex ex-max ex-max-r"></div>
+        </div>
+        <h5>Space around</h5>
+        <p><pre class="code-style">&lt;<span class="ht">div</span><span class="ha"> class=</span><span class="hv">"flex space-around"</span>&gt;&lt;<span class="ht">/div</span>&gt;</pre></p>
+        <div class="flex space-around ex ex-alignment">
+            <div class="ex ex-max ex-max-b"></div>
+            <div class="ex ex-max ex-max-y"></div>
+            <div class="ex ex-max ex-max-r"></div>
+        </div>
+        <h5>Space between</h5>
+        <p><pre class="code-style">&lt;<span class="ht">div</span><span class="ha"> class=</span><span class="hv">"flex space-between"</span>&gt;&lt;<span class="ht">/div</span>&gt;</pre></p>
+        <div class="flex space-between ex ex-alignment">
+            <div class="ex ex-max ex-max-b"></div>
+            <div class="ex ex-max ex-max-y"></div>
+            <div class="ex ex-max ex-max-r"></div>
+        </div>
+        <h5>Space evenly</h5>
+        <p><pre class="code-style">&lt;<span class="ht">div</span><span class="ha"> class=</span><span class="hv">"flex space-evenly"</span>&gt;&lt;<span class="ht">/div</span>&gt;</pre></p>
+        <div class="flex space-evenly ex ex-alignment">
+            <div class="ex ex-max ex-max-b"></div>
+            <div class="ex ex-max ex-max-y"></div>
+            <div class="ex ex-max ex-max-r"></div>
+        </div>
+        <h5>Wrapped elements</h5>
+        <p><pre class="code-style">&lt;<span class="ht">div</span><span class="ha"> class=</span><span class="hv">"flex wrap"</span>&gt;&lt;<span class="ht">/div</span>&gt;</pre></p>
+        <div class="flex wrap ex-alignment">
+            <div class="ex ex-col-b"></div>
+            <div class="ex ex-col-o"></div>
+            <div class="ex ex-col-r"></div>
+            <div class="ex ex-col-v"></div>
+            <div class="ex ex-col-gr"></div>
+            <div class="ex ex-col-g"></div>
+        </div>
+        <h2>Responsive example</h2>
+        <p>For big screens we have 20% sidebar and 80% content, for under md breakpoint (991px) we will have 33% sidebar and 66% content, under sm breakpoint (767px) we will have equal width for the sidebar and content, under xs breakpoint (576px) the items will be displayed as column.</p>
+        <pre>
+<code>&lt;<span class="ht">div</span><span class="ha"> class=</span><span class="hv">"flex column"</span>&gt;</code>
+    <code>&lt;<span class="ht">nav</span>&gt;&lt;<span class="ht">/nav</span>&gt;</code>
+    <code>&lt;<span class="ht">div</span><span class="ha"> class=</span><span class="hv">"flex xs-column"</span>&gt;</code>
+        <code>&lt;<span class="ht">div</span><span class="ha"> class=</span><span class="hv">"sidebar col-1"</span>&gt;&lt;<span class="ht">/div</span>&gt;</code>
+        <code>&lt;<span class="ht">div</span><span class="ha"> class=</span><span class="hv">"content col-4 col-md-2 col-sm-1"</span>&gt;&lt;<span class="ht">/div</span>&gt;</code>
+    <code>&lt;<span class="ht">/div</span>&gt;</code>
+<code>&lt;<span class="ht">/div</span>&gt;</code>
+        </pre>
+        <div class="ex flex column ex-alignment">
+            <div class="ex ex-nav"></div>
+            <div class="flex xs-column">
+                <div class="col-1 ex ex-side"></div>
+                <div class="col-4 col-md-2 col-sm-1 ex ex-container"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Headings and paragraphs</h2>
+        <div class="flex vertical-center">
+            <div class="col-1"><code class="code-style">&lt;<span class="ht">h1</span>&gt;&lt;<span class="ht">/h1</span>&gt;</code></div>
+            <div class="col-3 col-sm-1"><h1>Heading H1</h1></div>
+        </div>
+        <div class="flex vertical-center">
+            <div class="col-1"><code class="code-style">&lt;<span class="ht">h2</span>&gt;&lt;<span class="ht">/h2</span>&gt;</code></div>
+            <div class="col-3 col-sm-1"><h2>Heading H2</h2></div>
+        </div>
+        <div class="flex vertical-center">
+            <div class="col-1"><code class="code-style">&lt;<span class="ht">h3</span>&gt;&lt;<span class="ht">/h3</span>&gt;</code></div>
+            <div class="col-3 col-sm-1"><h3>Heading H3</h3></div>
+        </div>
+        <div class="flex vertical-center">
+            <div class="col-1"><code class="code-style">&lt;<span class="ht">h4</span>&gt;&lt;<span class="ht">/h4</span>&gt;</code></div>
+            <div class="col-3 col-sm-1"><h4>Heading H4</h4></div>
+        </div>
+        <div class="flex vertical-center">
+            <div class="col-1"><code class="code-style">&lt;<span class="ht">h5</span>&gt;&lt;<span class="ht">/h5</span>&gt;</code></div>
+            <div class="col-3 col-sm-1"><h5>Heading H5</h5></div>
+        </div>
+        <div class="flex vertical-center">
+            <div class="col-1"><code class="code-style">&lt;<span class="ht">h6</span>&gt;&lt;<span class="ht">/h6</span>&gt;</code></div>
+            <div class="col-3 col-sm-1"><h6>Heading H6</h6></div>
+        </div>
+        <h2>Images</h2>
+        <h5>Responsive images</h5>
+        <p>Use <code class="class">.img-fit</code> for responsive images.</p>
+        <img class="img-fit" src="assets/images/wide4.jpg">
+        <p>To center an image use <code class="class">.img-center</code>. For vertical align wrap the image in a div that has class <code class="class">.flex vertical-center</code></p>
+        <img class="img-fit img-center img-ex-center" src="assets/images/5.png">
+        <h5>Grid images</h5>
+        <p>Here is an example for a grid with 4 images</p>
+        <div class="flex wrap">
+            <div class="flex vertical-center ex-4"><img class="img-fit img-center" src="assets/images/1.jpg"></div>
+            <div class="flex vertical-center ex-4"><img class="img-fit img-center" src="assets/images/2.png"></div>
+            <div class="flex vertical-center ex-4"><img class="img-fit img-center" src="assets/images/3.png"></div>
+            <div class="flex vertical-center ex-4"><img class="img-fit img-center" src="assets/images/4.png"></div>
+        </div>
+    </div>
+</main>
+<footer class="column-sm">
+</footer>
+</body>
+</html>

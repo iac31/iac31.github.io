@@ -1,0 +1,170 @@
+@import "variables";
+
+body {
+  font-family: $font-family-sans-serif;
+  font-size: 1rem;
+  margin: 0;
+}
+
+a {
+  color: $belizeHole;
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 15px;
+  max-width: $maxWidth;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  padding: 0 15px;
+}
+
+@for $i from 1 through 6 {
+  .col-#{$i} {
+    flex: $i;
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-margin-top {
+  margin-top: 0;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+nav {
+  padding: 5px 0;
+  border-bottom: 2px solid $belizeHole;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.vertical-center {
+  align-items: center;
+}
+
+.form-element {
+  input, textarea {
+    width: 100%;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.img {
+  &-fit {
+    max-width: 100%;
+  }
+
+  &-center {
+    display: block;
+    margin: 0 auto;
+  }
+}

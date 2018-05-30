@@ -1,0 +1,27 @@
+@media only screen and (max-width: 767px) {
+
+  @for $i from 1 through 3 {
+    .col-sm-#{$i} {
+      flex: $i;
+    }
+  }
+
+  .sm {
+
+    &-hide {
+      display: none;
+    }
+
+    &-flex {
+      display: flex;
+    }
+
+    &-column {
+      flex-direction: column;
+    }
+
+    &-row {
+      flex-direction: row;
+    }
+  }
+}
