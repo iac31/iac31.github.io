@@ -201,6 +201,7 @@ pre, .code-style {
       background-color: #e74c3c; }
   .ex-border {
     border: 2px solid #3498db;
+    border-radius: 0.5rem;
     height: 300px; }
   .ex-4 {
     width: 25%; }
