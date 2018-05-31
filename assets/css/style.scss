@@ -120,6 +120,10 @@ pre, .code-style {
     }
   }
 
+  &-border {
+    border: 2px solid $amethyst;
+  }
+
   &-4 {
     width: 25%;
   }
