@@ -167,4 +167,12 @@ tbody {
   }
 }
 
+.rotate-minus {
+  transform: rotate(-25deg);
+}
+
+.rotate-plus {
+  transform: rotate(25deg);
+}
+
 @import "responsive";
